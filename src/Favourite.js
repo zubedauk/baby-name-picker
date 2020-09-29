@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 const Favourite=(prop)=>{
     const cssStyleNames={
         marginTop:'5px',
@@ -29,14 +29,18 @@ const Favourite=(prop)=>{
     padding:'5px',
     border:'2px solid red'
    }
+   const [name,setName]=useState();
+   function displayFav(event){
+        
+   }
     return(
        <div style={cssStyleNames} id="fav">
             {
                 prop.p.map(function(obj){
                     if(obj.sex==='f'){
-                        return <li key={obj.id} style={cssStyleGirl}>{obj.name}</li>
+                        return <li key={obj.id} style={cssStyleGirl} onClick={displayFav}>{obj.name}</li>
                     }else{
-                        return <li key={obj.id} style={cssStyleBoy}>{obj.name}</li>
+                        return <li key={obj.id} style={cssStyleBoy} onClick={displayFav}>{obj.name}</li>
                     }
                 })
             }

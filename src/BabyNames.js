@@ -17,7 +17,7 @@ const cssStyle={
 //const color1=['#EC7EBE','#9DCB67','pink','#E2BA97','#9DCB55','#fe4a49' , '#2ab7ca',' #fed766']
 
 const color1=['#FFB6C1','#2ab7ca'];
-let clr,clr1;
+
 
 const BabyNames=()=>{
   const [name,setName]=useState(190);
@@ -28,11 +28,13 @@ const BabyNames=()=>{
   //display favourite name
   
   function displayFav(event){
+    alert(event.target.tagName)
     let name1=event.target.textContent;
     let objFav=Data.filter(function(obj){
-      return obj.name===name1
+      return obj.name===name1;
     })
-    
+   
+    event.target.textContent="";
    setFav(fav.concat(objFav));
     
   

@@ -26,6 +26,7 @@ const Search=()=>{
       existName=Data.filter(function(obj){
       return obj.name.toLocaleLowerCase().slice(0,event.target.value.length).toLocaleLowerCase()===event.target.value.toLocaleLowerCase();
       })
+      
      // alert("IN"+input)
      setInput(existName);
     }
