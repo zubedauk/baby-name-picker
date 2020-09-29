@@ -25,7 +25,7 @@ const BabyNames=()=>{
   //display favourite name
   
   function displayFav(event){
-    alert(event.target.tagName)
+   
     let name1=event.target.textContent;
     let objFav=Data.filter(function(obj){
       return obj.name===name1;
