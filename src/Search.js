@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Data from './babyNamesData.json';
-import Favourite from './Favourite';
 import './App.css';
 
 const Search=()=>{
@@ -54,7 +53,7 @@ const Search=()=>{
    
  }
  const color1=['#FFB6C1','#2ab7ca'];
-let clr,clr1;
+
  const cssStyleGirl={
   backgroundColor:color1[0],
   color:'#800080',

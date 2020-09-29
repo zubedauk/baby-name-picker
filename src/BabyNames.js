@@ -20,10 +20,7 @@ const color1=['#FFB6C1','#2ab7ca'];
 
 
 const BabyNames=()=>{
-  const [name,setName]=useState(190);
-    const favList=[];
-   
-   
+ 
    const [fav,setFav]=useState([])
   //display favourite name
   
@@ -67,7 +64,7 @@ const BabyNames=()=>{
 
              <ul style={cssStyle} id="list">
            {               Data.map(function(obj){
-                if(obj.sex=='f'){
+                if(obj.sex==='f'){
                     return <li key={obj.id} style={cssStyleGirl} onClick={displayFav} class="name">
                     {obj.name}
                    

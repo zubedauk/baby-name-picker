@@ -1,10 +1,8 @@
 import React from 'react';
 import Names from "./BabyNames";
 import Search from "./Search"; 
-import Favourite from './Favourite'
-import Dummy from "./Dummy"
 import './App.css';
-import * as serviceWorker from './serviceWorker';
+
 const App = () => {
   const cssStyle={
     borderBottom:'3px solid #FFB6C1',

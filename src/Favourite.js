@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 const Favourite=(prop)=>{
     const cssStyleNames={
         marginTop:'5px',
@@ -29,7 +29,7 @@ const Favourite=(prop)=>{
     padding:'5px',
     border:'2px solid red'
    }
-   const [name,setName]=useState();
+  
    function displayFav(event){
         
    }
