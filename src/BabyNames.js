@@ -26,7 +26,7 @@ const BabyNames=()=>{
   //display favourite name
   function moveBack(id){
     document.getElementById(id).style.display="none"
-   alert("++++."+ document.getElementById(id).style.display)
+ //  alert("++++."+ document.getElementById(id).style.display)
    
   //document.getElementById(id).style.backgroundColor="red"
    // document.getElementById(id).style.display="block";
