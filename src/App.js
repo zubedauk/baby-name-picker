@@ -2,7 +2,6 @@ import React from 'react';
 import Names from "./BabyNames";
 import Search from "./Search"; 
 import './App.css';
-
 const App = () => {
   const cssStyle={
     borderBottom:'3px solid #FFB6C1',

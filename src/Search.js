@@ -28,6 +28,7 @@ const Search=()=>{
       
      // alert("IN"+input)
      setInput(existName);
+     alert(input.length)
     }
     document.getElementById("fav").innerHTML="";
   }
