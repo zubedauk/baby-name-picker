@@ -10,7 +10,7 @@ const Search=()=>{
   
   //dispaly seacrsh names
   function name(event){
-   // alert("c")
+  
     let existName=[];
     //console.log(event.target.value);
     if(event.target.value===""){
@@ -91,9 +91,9 @@ const Search=()=>{
           input.map(function(obj){
             
                 if(obj.sex==='f'){
-                  return <li key={obj.id} style={cssStyleGirl}>{obj.name}</li>
+                  return <li  style={cssStyleGirl}>{obj.name}</li>
                 }else{
-                  return <li key={obj.id} style={cssStyleBoy}>{obj.name}</li>
+                  return <li  style={cssStyleBoy}>{obj.name}</li>
                 }
               })
           }

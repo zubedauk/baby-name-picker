@@ -13,14 +13,7 @@ const Favourite=(prop)=>{
          flexWrap:'wrap',
        
      }
-//     const cssStyleNames={
-//         marginTop:'5px',
-//        display: 'flex',
-//        alignItems: 'center',
-//      justifyContent: 'center',
-//        flexWrap:'wrap',
-     
-//    }
+//     
    const color1=['#FFB6C1','#2ab7ca'];
    const cssStyleGirl={
     backgroundColor:color1[0],
@@ -45,35 +38,33 @@ const Favourite=(prop)=>{
     
    }
   
-   function displayFav(event){
+   function remove(event){
     document.getElementById(event.target.id).style.display="none";
-   // document.getElementById(prop.moveBackId).style.display="block";
-
-    prop.moveBack(prop.moveBackId)
+    prop.moveBack(event.target.id)
    }
     return(
-        
-
-       <div style={cssStyle} id="fav"> 
+        <>
+       
+       <div style={cssStyle} id="fav">
             {
                 prop.p.map(function(obj){
                     
                     if(obj.sex==='f'){
-                        return <li id={obj.id} key={obj.id} style={cssStyleGirl} onClick={displayFav} class="name">
+                        return <li id={obj.id} key={obj.id} style={cssStyleGirl} onClick={remove} class="name">
                     {obj.name}
                    
                     </li>
 
                 }
                 else{
-                    return <li id={obj.id} key={obj.id} style={cssStyleBoy} onClick={displayFav} class="name">{obj.name}</li>
+                    return <li id={obj.id} key={obj.id} style={cssStyleBoy} onClick={remove} class="name">{obj.name}</li>
 
                 }
                 })
             }
           
        </div>
-
+</>
     )
 }
 export default Favourite;
